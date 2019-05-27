@@ -1,0 +1,131 @@
+.section
+	/* Display & Box Model */
+	display: flex
+	&--main
+		/* Display & Box Model */
+		background-color: $orange
+
+		/* Text */
+		color: $light
+	&__title
+		/* Display & Box Model */
+		margin-top: 0
+		margin-bottom: 30px
+
+		/* Text */
+		font-size: 36px
+		font-weight: bold
+		text-align: center
+	&__image
+		/* Display & Box Model */
+		width: 50%
+		img
+			/* Display & Box Model */
+			height: 100%
+			width: 100%
+			object-fit: cover
+	&__content
+		/* Display & Box Model */
+		display: flex
+		flex-direction: column
+		justify-content: center
+		width: 50%
+		padding-left: calc(100% / 12)
+		padding-right: calc(100% / 6)
+		margin: 100px 0
+
+		h1
+			/* Display & Box Model */
+			margin-top: 0
+			margin-bottom: 10px
+
+			/* Text */
+			font-size: 32px
+			font-weight: 600
+		h2
+			/* Display & Box Model */
+			margin-top: 0
+			margin-bottom: 15px
+
+			/* Text */
+			font-size: 18px
+			font-weight: 600
+		h3
+			/* Display & Box Model */
+			margin-top: 0
+			margin-bottom: 50px
+
+			/* Text */
+			font-size: 18px
+			font-weight: normal
+	&__list
+		/* Display & Box Model */
+		display: flex
+		align-items: center
+		margin-bottom: 20px
+
+		/* Text */
+		text-transform: uppercase
+		&:last-of-type
+			/* Display & Box Model */
+			margin-bottom: 0
+	&__icon
+		/* Display & Box Model */
+		width: 40px
+		height: 40px
+		margin-right: 10px
+		img
+			/* Display & Box Model */
+			height: 100%
+			width: 100%
+			object-fit: contain
+	&__pink
+		/* Text */
+		color: $pink
+	&--second
+		/* Display & Box Model */
+		background-color: $light
+
+		/* Text */
+		color: $dark
+		.section
+			&__image
+				/* Display & Box Model */
+				margin: 50px 0
+				padding-left: calc(100% / 12)
+			&__content
+				h2
+					/* Display & Box Model */
+					margin-bottom: 20px
+
+					/* Text */
+					font-size: 38px
+					line-height: 1.25
+					font-weight: normal
+					text-transform: uppercase
+				h3
+					/* Display & Box Model */
+					margin-bottom: 20px
+
+					/* Text */
+					font-size: 15px
+					line-height: 1.4
+			&__icon
+				/* Display & Box Model */
+				width: 200px
+				height: auto
+				margin-right: 0
+				margin-bottom: 20px
+	&--third
+		/* Display & Box Model */
+		flex-direction: column
+		align-items: center
+
+		padding: 80px calc(100% / 6)
+		background-color: $lightblue-bg
+
+		/* Text */
+		color: $light
+	&--map
+		/* Display & Box Model */
+		height: 440px

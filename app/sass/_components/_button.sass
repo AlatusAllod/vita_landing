@@ -1,0 +1,26 @@
+.button
+	/* Display & Box Model */
+	display: flex
+	align-items: center
+	align-self: flex-start
+	height: 40px
+	padding: 0 20px
+	background-color: $lightblue-button
+	border: 1px solid $lightblue-button
+	outline: none
+
+	/* Text */
+	font-size: 13px
+	font-weight: 500
+	color: $light
+	text-decoration: none
+
+	/* Other */
+	transition-property: background-color, color
+	transition-duration: .5s
+	&:hover
+		/* Display & Box Model */
+		background-color: $light
+
+		/* Text */
+		color: $lightblue-button
