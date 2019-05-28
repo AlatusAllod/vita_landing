@@ -15,6 +15,10 @@
 			/* Display & Box Model */
 			margin: 0
 			padding: 0 40px
+		@include media-phone
+			/* Display & Box Model */
+			height: 50px
+			padding: 0 20px
 	&__button
 		/* Display & Box Model */
 		padding: 0
@@ -46,6 +50,10 @@
 			right: 5%
 			top: 50%
 			transform: translateY(-70%) rotate(45deg)
+		@include media-phone
+			/* Display & Box Model */
+			width: 100%
+			text-align: left
 	&__copyright
 		/* Display & Box Model */
 		padding: 30px 0
@@ -58,6 +66,10 @@
 		@include media-tablet
 			/* Display & Box Model */
 			margin: 0 40px
+		@include media-phone
+			/* Display & Box Model */
+			margin: 0 20px
+			padding: 20px 0
 	&__info
 		/* Display & Box Model */
 		display: flex
@@ -68,6 +80,10 @@
 			/* Display & Box Model */
 			margin: 0
 			padding: 0 40px
+		@include media-phone
+			/* Display & Box Model */
+			flex-direction: column
+			padding: 0 20px
 	&__column
 		/* Display & Box Model */
 		padding-right: calc(100% / 12)

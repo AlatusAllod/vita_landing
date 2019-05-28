@@ -1,3 +1,5 @@
+@import '../_mixins/_media-mixin.sass'
+
 .button
 	/* Display & Box Model */
 	display: flex
@@ -24,3 +26,16 @@
 
 		/* Text */
 		color: $lightblue-button
+	@include media-phone 
+		/* Display & Box Model */
+		align-self: center
+		padding: 0
+		border: none
+		background: transparent
+		height: auto
+
+		/* Text */
+		color: $lightblue-button
+		&:hover
+			/* Display & Box Model */
+			background-color: transparent

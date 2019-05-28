@@ -33,6 +33,12 @@ $(document).ready(() => {
 		],
 	});
 
+	// Hamburger
+	$('.hamburger').click(function() {
+		$(this).toggleClass('is-active');
+		$('.toolbar__mobile').slideToggle();
+	});
+
 	// Yadex maps
 	ymaps.ready(() => {
 		const myMap = new ymaps.Map('map', {
@@ -59,11 +65,5 @@ $(document).ready(() => {
 			}
 		);
 		myMap.geoObjects.add(myPlacemark);
-	});
-
-	// Hamburger
-	$('.hamburger').click(function() {
-		$(this).toggleClass('is-active');
-		$('.toolbar__mobile').slideToggle();
 	});
 });
