@@ -1,3 +1,5 @@
+@import '../_mixins/_media-mixin.sass'
+
 .section
 	/* Display & Box Model */
 	display: flex
@@ -7,6 +9,9 @@
 
 		/* Text */
 		color: $light
+		@include media-tablet
+			/* Display & Box Model */
+			flex-direction: column
 	&__title
 		/* Display & Box Model */
 		margin-top: 0
@@ -24,6 +29,9 @@
 			height: 100%
 			width: 100%
 			object-fit: cover
+		@include media-tablet
+			/* Display & Box Model */
+			width: 100%
 	&__content
 		/* Display & Box Model */
 		display: flex
@@ -33,7 +41,12 @@
 		padding-left: calc(100% / 12)
 		padding-right: calc(100% / 6)
 		margin: 100px 0
-
+		@include media-tablet
+			/* Display & Box Model */
+			width: 100%
+			margin: 50px 0
+			padding-left: 40px
+			padding-right: 40px
 		h1
 			/* Display & Box Model */
 			margin-top: 0
@@ -82,17 +95,39 @@
 	&__pink
 		/* Text */
 		color: $pink
+	&__disclaimer
+		/* Display & Box Model */
+		align-self: flex-start
+		background: $pink
+		padding: 5px 15px
+		margin-bottom: 20px
+
+		/* Text */
+		font-size: 16px
+		text-transform: uppercase
+		color: $light
 	&--second
 		/* Display & Box Model */
 		background-color: $light
 
 		/* Text */
 		color: $dark
+		@include media-tablet
+			/* Display & Box Model */
+			flex-direction: column
 		.section
 			&__image
 				/* Display & Box Model */
 				margin: 50px 0
 				padding-left: calc(100% / 12)
+				img
+					/* Display & Box Model */
+					object-fit: contain
+				@include media-tablet
+					/* Display & Box Model */
+					padding-left: 40px
+					padding-right: 40px
+					margin-bottom: 0
 			&__content
 				h2
 					/* Display & Box Model */
@@ -120,12 +155,14 @@
 		/* Display & Box Model */
 		flex-direction: column
 		align-items: center
-
 		padding: 80px calc(100% / 6)
 		background-color: $lightblue-bg
 
 		/* Text */
 		color: $light
+		@include media-tablet
+			/* Display & Box Model */
+			padding: 50px 40px
 	&--map
 		/* Display & Box Model */
 		height: 440px
